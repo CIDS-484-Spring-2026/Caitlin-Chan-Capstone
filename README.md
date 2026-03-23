@@ -25,8 +25,28 @@ This project focuses on the end-to-end pipeline of retail data, from raw cloud l
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ M1 Technologies Used
 * **Language:** Python 3.x
 * **IDE:** IntelliJ IDEA
 * **Database:** Google BigQuery (SQL)
 * **Data Libraries:** Pandas, NumPy
+
+## 🚩 Milestone 2: Data Preparation & ML Model
+What I Accomplished
+
+- [x]	Cleaned and validated the data: I removed zero-price records that would corrupt the model, confirmed that products with multiple prices reflect genuine price changes over time (not dirty data), and extracted the most recent price per product for use in recommendations.
+
+- [x]	Performed Exploratory Data Analysis (EDA): Investigated the dataset to understand user behaviour before modelling. This included identifying the top users by interaction count, analysing which products had the highest number of interactions, and ranking the top 10 best-selling products by purchase frequency.
+
+- [x] Built a product relationship map: I created a co-occurrence heatmap of the top 10 products to understand which products are genuinely bought together. After comparing two approaches, I chose Pearson correlation over raw co-purchase scores because it captures real buying behaviour rather than just popularity.
+
+- [x] Plan and choose the right machine learning algorithm: I tried to install scikit-surprise (SVD) but it requires a C++ compiler that wasn’t available on my Windows machine. Instead I used the implicit library (ALS — Alternating Least Squares), which is purpose-built for this type of problem and installed without issues.
+
+## 🛠️ M2 Technologies Used
+* **Language**: Python 3.11
+* **IDE**: IntelliJ IDEA + Jupyter Notebook
+* **Database**: Google BigQuery (SQL)
+* **Cloud Auth**: Google Cloud CLI + BigQuery Storage API
+* **Data Libraries**: Pandas, NumPy, db-dtypes, PyArrow, SciPy, scikit-learn
+* **Visualisation Libraries**: Matplotlib, Seaborn, adjustText
+
