@@ -31,7 +31,7 @@ This project focuses on the end-to-end pipeline of retail data, from raw cloud l
 * **Database:** Google BigQuery (SQL)
 * **Data Libraries:** Pandas, NumPy
 
-✅  Milestone 2: Data Preparation & ML Model
+## 🚩 Milestone 2: Data Preparation & ML Model
 What I Accomplished
 
 - [x]	Cleaned and validated the data: I removed zero-price records that would corrupt the model, confirmed that products with multiple prices reflect genuine price changes over time (not dirty data), and extracted the most recent price per product for use in recommendations.
