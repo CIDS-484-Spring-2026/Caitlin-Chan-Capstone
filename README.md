@@ -50,3 +50,23 @@ What I Accomplished
 * **Data Libraries**: Pandas, NumPy, db-dtypes, PyArrow, SciPy, scikit-learn
 * **Visualisation Libraries**: Matplotlib, Seaborn, adjustText
 
+Milestone 3: Machine Learning Model & Dashboard Deployment
+What I Accomplished
+
+ - [x]	Trained and compared two ML models: Built Model A on raw interaction counts and Model B on correlation-weighted interactions, using the heatmap analysis to boost products with strong co-purchase patterns and downweight isolated ones. Model B won with 11.9% Precision@5 versus Model A's 9.2%.
+- [x]	Fixed a critical matrix orientation bug: The user-item matrix was accidentally passed in transposed format, causing the model to learn the wrong factors entirely. Fixing this single mistake improved Precision@5 from 0.3% to 9.2% — the biggest single performance jump in the project.
+- [x]	Tuned the model across 98 parameter combinations: A wide grid search across 18 combinations followed by a narrow focused search across 80 combinations identified the optimal settings of factors=15, regularization=0.01, and iterations=20, pushing final model performance to 15.2% Precision@5.
+- [x]	Saved all model artifacts: The trained ALS model, label encoders, sparse matrix, correlation matrix, label map, and most recent price lookup were saved to a pickle file for use in the dashboard without retraining.
+- [x]	Built and deployed an interactive dashboard: Developed a Streamlit web application that loads the trained model and allows any user to select a product from a dropdown and instantly receive five personalised recommendations, each displaying the product name, current price, correlation score, and confidence level.
+
+M3 Technologies Used
+
+Language: Python 3.11
+* IDE: IntelliJ IDEA + Jupyter Notebook
+* ML Library: implicit 0.7.2 (Alternating Least Squares)
+* Sparse Matrix: SciPy (CSR format)
+* Dashboard: Streamlit
+* Model Persistence: pickle
+* Version Control: Git + GitHub
+* Sonnet 4.6
+
