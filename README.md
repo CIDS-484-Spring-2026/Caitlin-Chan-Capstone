@@ -50,7 +50,7 @@ What I Accomplished
 * **Data Libraries**: Pandas, NumPy, db-dtypes, PyArrow, SciPy, scikit-learn
 * **Visualisation Libraries**: Matplotlib, Seaborn, adjustText
 
-Milestone 3: Machine Learning Model & Dashboard Deployment
+## Milestone 3: Machine Learning Model & Dashboard Deployment
 What I Accomplished
 
  - [x]	Trained and compared two ML models: Built Model A on raw interaction counts and Model B on correlation-weighted interactions, using the heatmap analysis to boost products with strong co-purchase patterns and downweight isolated ones. Model B won with 11.9% Precision@5 versus Model A's 9.2%.
@@ -59,7 +59,7 @@ What I Accomplished
 - [x]	Saved all model artifacts: The trained ALS model, label encoders, sparse matrix, correlation matrix, label map, and most recent price lookup were saved to a pickle file for use in the dashboard without retraining.
 - [x]	Built and deployed an interactive dashboard: Developed a Streamlit web application that loads the trained model and allows any user to select a product from a dropdown and instantly receive five personalised recommendations, each displaying the product name, current price, correlation score, and confidence level.
 
-M3 Technologies Used
+## M3 Technologies Used
 
 Language: Python 3.11
 * IDE: IntelliJ IDEA + Jupyter Notebook
